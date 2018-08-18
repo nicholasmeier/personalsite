@@ -13,26 +13,32 @@
    			top: 0;
    			left: 0;
 
+   			list-style-type: none;
    			overflow: hidden;
 		}
 
 		div.titlebox{
 			width: 100%;
-			height: 75px;
+			height: 150px;
 			background-color: #82b74b;
 			color: #3e4444;
-   			text-indent: 40px;
+   			text-indent: 15%;
 			font-size: 18px;
 		}
 
 		div.mainwrap{
 			position: relative;
+			top: 20px;
 			border: 3px;
 
 			white-space: nowrap;
 			margin: auto;
-			/*max-width: 99%;*/
-			/*background-color: #66ff66;*/
+			float: center;
+			width: 75%;
+
+			
+			/*max-width: 99%;
+			background-color: #66ff66;
 			/*width: 50%;
 			margin: 0 auto;
 
@@ -46,10 +52,7 @@
 
 		div.infobox {
 			/*Positioning*/
-			display: inline-block;
-			white-space: normal;
-			vertical-align: middle;
-			text-align: center;
+
 
 			position: relative;
 			left: 20px;
@@ -89,8 +92,8 @@
 			top: 20px;
 
 
-			display: table-cell;
 			vertical-align: middle;
+			display: table-cell;
 			text-align: center;
 			margin: auto;
 		}
@@ -99,16 +102,45 @@
 			border-radius: 15px
 		}
 
+		/*Navigation Bar Stuffs*/
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			float: left;
+		}
+		li a {
+			display: block;
+			background-color: #82b74b;
+			color: #3e4444;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			text-indent: 0%;
+		}
+		li a:hover{
+			background-color: #66ff66;
+		}
+
+
 	</style>
 	<body>
 		<div class="titlebox">
 			<h1 style="margin-bottom: 0px">Welcome to Hell</h1>
-			<p style="margin-top: 0px; text-indent: 60px">(if someone painted it green)</p>	
+			<p style="margin-top: 0px; text-indent: 17%">(if someone painted it green)</p>	
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
 		</div>
+		
 		<!--Maybe have this split into links?-->
 		<div class="mainwrap">
 			<div class="infobox" style="text-align:left">
-				<h1 align="left" style="font-size: 25px; text-indent: 20px; margin-bottom: 5px;">About Me</h1>
+				<h1 align="left" style="font-size: 25px; text-indent: 20px; margin-bottom: 5px;">	About Me</h1>
 				<p style="margin-top: 9px">Computer Science Undergrad at Purdue University</p>
 				<p style="margin-top: 0px">Software Engineering at Aptiv</p>
 				<p style="margin-top: 0px">Experience with C++, C#, HTML, and JS</p>
@@ -118,7 +150,7 @@
 				<img src="portrait.jpg" height="240" width="150">
 			</div>	
 		</div>
-		
+			
 
 	</body>
 </html>
